@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+int main() {
+    // 1. Kieu so nguyen (int)
+    // int là kieu du lieu dùng de luu tru các so nguyên
+    int age = 25; // Bien luu tuoi
+
+    // 2. Kieu so thuc (float)
+    // float la kieu du lieu dung de luu các so thuc voi do chinh xac don.
+    float height = 1.75; // Chieu cao (don vi: mét)
+
+    // 3. Kieu so thuc voi do chinh xac cao (double)
+    // double tuong tu float nhung có do chính xác cao hon.
+    double pi = 3.141592653589793; // Gia tri cua so pi
+
+    // 4. Kieu ky tu (char)
+    // char là kieu du lieu luu tru mot ky tu ASCII.
+    char grade = 'A'; // Ðiem hoc tap
+
+    // 5. Kieu boolean (su dung thu vien stdbool.h)
+    // bool là kieu du lieu chi luu tru giá tri true (1) hoac false (0).
+    #include <stdbool.h>
+    bool isStudent = true; // Bien kiem tra có phai sinh viên hay không
+
+    // 6. Kieu so nguyen khong dau (unsigned int)
+    // unsigned int dung de luu các so nguyên không am, gia tri lon nhat gap doi int duong.
+    unsigned int population = 1000000; // Dân so
+
+    // 7. Kieu so nguyen ngan (short)
+    // short dùng de luu các so nguyen nho hon, chiem it bo nho hon int.
+    short temperature = -15; // Nhiet do (d? C)
+
+    // 8. Kieu so nguyen dai (long)
+    // long dung de luu cac so nguyên lon hon int.
+    long distance = 987654321; // Khoang cach (don vi: mét)
+
+    // 9. Kieu void (không dùng de khai báo bien, mà chu yeu trong hàm)
+    // void không luu tru du lieu ma dung de bieu thi "không có giá tri tra ve".
+    // Vi du: void functionName() { }
+
+    // In ra các bien vua khai báo
+    printf("Age: %d\n", age);
+    printf("Height: %.2f meters\n", height);
+    printf("Pi: %.15lf\n", pi);
+    printf("Grade: %c\n", grade);
+    printf("Is Student: %d\n", isStudent);
+    printf("Population: %u\n", population);
+    printf("Temperature: %d°C\n", temperature);
+    printf("Distance: %ld meters\n", distance);
+
+    return 0;
+}
+
